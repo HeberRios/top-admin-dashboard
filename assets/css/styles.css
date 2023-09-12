@@ -9,6 +9,7 @@
 :root {
     /* COLORS */
     --red: #f32e2b;
+    --dark-red: #c10e0b;
     --green: #16b64e;
     --blue: #007af5;
     --white: #f4f4f5;
@@ -49,6 +50,8 @@ body {
     grid-template-columns: 0.6fr 3fr;
     grid-template-rows: 1fr 4fr;
     font-family: "DOOM Regular", sans-serif;
+    color: var(--white);
+    background-color: var(--black);
 }
 
 .header-section {
@@ -64,3 +67,70 @@ main {
     grid-column: 2/-1;
     grid-row: 2/-1;
 }
+
+a:link,
+a:visited {
+    text-decoration: none;
+    color: var(--white);
+}
+
+/* SIDEBAR SECTION ------------------------------------------------------- */
+.sidebar-section {
+    display: flex;
+    flex-direction: column;
+    gap: 4.8rem;
+    padding: 1.6rem;
+    background-color: var(--dark-red);
+}
+
+.dashboard-header-box {
+    display: flex;
+    gap: 1.6rem;
+    align-items: center;
+}
+
+.dashboard-logo {
+    width: 5.2rem;
+}
+
+h1 {
+    font-size: 2.4rem;
+    font-family: "DOOM Bold", sans-serif;
+    letter-spacing: 0.125rem;
+}
+
+.list-box-1,
+.list-box-2 {
+    margin-left: 3.2rem;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.nav-icon {
+    width: 3rem;
+}
+
+.nav-link p {
+    font-size: 2rem;
+    text-transform: capitalize;
+	font-weight: 700;
+}
+/* --FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+--SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */
