@@ -1,0 +1,43 @@
+/* CSS RESET -------------------------------------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CSS CUSTOM PROPERTIES ------------------------------------------------- */
+:root {
+    /* COLORS */
+    --red: #f32e2b;
+    --green: #16b64e;
+    --blue: #007af5;
+    --white: #f4f4f5;
+    --black: #131315;
+}
+
+/* FONTS ------------------------------------------------------------------ */
+@font-face {
+    font-display: swap;
+    font-family: "DOOM Regular";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/eternaluiregular.woff2") format("woff2");
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "DOOM Bold";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/eternaluibold.woff2") format("woff2");
+}
+
+/* GENERAL STYLING ------------------------------------------------------- */
+html {
+    font-size: 62.5%;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
