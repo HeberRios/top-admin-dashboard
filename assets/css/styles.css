@@ -16,6 +16,7 @@
     --black: #131315;
     --dark-grey: #1d1d20;
     --dark-grey-search-bar: #303036;
+    --grey: #616163;
 
     /* BORDER RADIUS */
     --base-border-radius: 3rem;
@@ -41,7 +42,7 @@
 /* GENERAL STYLING ------------------------------------------------------- */
 *:focus {
     outline: none;
-    box-shadow: 0 0 0 .4rem var(--blue);
+    box-shadow: 0 0 0 0.4rem var(--blue);
 }
 
 html {
@@ -246,6 +247,140 @@ ul {
 .action-btn:active {
     cursor: pointer;
     background-color: var(--red);
+}
+
+/* MAIN SECTION ---------------------------------------------------------- */
+main {
+    display: grid;
+    grid-template-columns: 2fr 0.7fr;
+    column-gap: 2.4rem;
+    padding: 2.4rem;
+}
+
+.projects-box {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+}
+
+.projects-heading,
+.announcements-heading,
+.trendings-heading {
+    font-family: "DOOM Bold", sans-serif;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    column-gap: 1.6rem;
+    row-gap: 2.4rem;
+}
+
+.project-card {
+    /* max-height: 30rem; */
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    justify-content: space-between;
+    padding: 2.4rem;
+    background-color: var(--black);
+    border-radius: 1.025rem;
+    border-left: 1rem solid var(--green);
+}
+
+.project-title {
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    margin-bottom: 0.5rem;
+}
+
+.project-description {
+    font-size: 1.6rem;
+    color: var(--grey);
+}
+
+.icons-box {
+    display: flex;
+    align-self: flex-end;
+    gap: 1.6rem;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+.announcements-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.announcements-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    padding: 2.4rem;
+}
+
+.announcement {
+    padding-bottom: 2.4rem;
+    border-bottom: 0.2rem solid var(--white);
+}
+
+.announcement-title {
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    margin-bottom: 0.25rem;
+}
+
+.announcement-description {
+    font-size: 1.4rem;
+}
+
+.announcement-description,
+.project-name {
+    color: var(--grey);
+}
+
+.announcements-container .announcement:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.announcements-container,
+.trendings-container {
+    background-color: var(--black);
+    flex-grow: 1;
+    border-radius: 1.025rem;
+}
+
+.trending-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.trendings-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    padding: 2.4rem;
+}
+
+.trending-project {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.project-author {
+    font-size: 1.8rem;
+}
+
+.project-name {
+    font-size: 1.6rem;
 }
 
 /* --FONT SIZE SYSTEM (px)
