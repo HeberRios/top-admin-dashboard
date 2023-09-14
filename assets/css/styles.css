@@ -113,7 +113,7 @@ h1 {
 
 .list-box-1,
 .list-box-2 {
-    margin-left: 3.2rem;
+    margin-left: 2.2rem;
 }
 
 .nav-list {
@@ -388,3 +388,17 @@ aside {
 
 --SPACING SYSTEM (px)
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */
+
+@media (max-width: 90rem) {
+    html {
+        font-size: 9px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .nav-link p {
+        font-size: 1.8rem;
+    }
+}
